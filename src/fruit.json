@@ -1,0 +1,18 @@
+[
+    {"id":1,
+    "name":"banana", 
+    "description": "Här ska det finnas info om en banan! Här ska det finnas info om en banan!",
+    "imageURL": "https://res.cloudinary.com/dzphzgkbb/image/upload/v1742986858/banana_izc7hk.png"},
+    {"id":2,
+    "name":"apple", 
+    "description": "Här ska det finnas info om ett äpple! Här ska det finnas info om ett äpple!",
+    "imageURL": "https://res.cloudinary.com/dzphzgkbb/image/upload/v1742986858/apple_ci5wjk.png"},
+    {"id":3,
+    "name":"pear", 
+    "description": "Här ska det finnas info om ett päron! Här ska det finnas info om ett päron!",
+    "imageURL": "https://res.cloudinary.com/dzphzgkbb/image/upload/v1742986858/pear_hsfbvs.png"},
+    {"id":4,
+    "name":"peach", 
+    "description": "Här ska det finnas info om en persika! Här ska det finnas info om en persika!",
+    "imageURL": "https://res.cloudinary.com/dzphzgkbb/image/upload/v1742986859/peach_wpgobg.png"}
+]
