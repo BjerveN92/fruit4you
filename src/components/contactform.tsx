@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Contact = () => {
+const Contactform = () => {
     const [formData, setFormData] = useState ({
         name: "",
         email:"",
@@ -20,7 +20,7 @@ const Contact = () => {
         e.preventDefault();
         console.log("Data submitted", formData );
 
-        // nollställer formuläret
+        // nollställer formuläret när användaren skickar iväg "emailet"
         setFormData ({
             name: "",
             email:"",
@@ -33,22 +33,33 @@ const Contact = () => {
     return (
         <div className="form-container">
             <h2>Contact us</h2>
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     name="text"
+                    placeholder="name.."
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                 />
                 <input
                     type="email"
                     name="email"
+                    placeholder="e-mail.."
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                 />
                 <textarea
                     name="message"
+                    placeholder="message.."
+                    value={formData.message}
+                    onChange={handleChange}
                     required
                 />
+                <button type="submit">Send</button>
             </form>
         </div>
     );
 };
+export default Contactform;
