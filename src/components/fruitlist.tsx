@@ -1,4 +1,6 @@
 import {useEffect, useState } from "react";
+import "./fruitlist.css";
+
 interface Fruit {
     id:number;
     name:string;
@@ -25,8 +27,11 @@ const FruitList = () => {
                 {fruits.map((fruit) => (
                     <div className="fruit-card" key={fruit.id}>
                         <img src={fruit.imageURL} alt={fruit.name} />
-                        <h2>{fruit.name}</h2>
-                        <p>{fruit.description}</p>
+                            <div className="fruit-card-text-container">
+                                <h2>{fruit.name}</h2>
+                                <p>{fruit.description}</p>
+                            </div>
+
                     </div>
                 ))}
             </div>

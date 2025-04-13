@@ -1,0 +1,50 @@
+/* hela fruktlådan..så att säga */
+.fruit-card-container {
+    /* background-color: rgb(68, 86, 86); */
+    display:flex;
+    flex-direction: column;
+}
+
+
+/* tänk att fruit-grid classname är 
+ordningen på frukt-korten  */
+.fruit-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* FRUKTKORTEN!!  */
+.fruit-card {
+    flex: 0 0 calc(33.33% - 20px); /* Ensure 3 cards fit in a row with a small gap */
+    box-sizing: border-box;
+    border-style: double;
+    border-color: black;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    height: 300px; /* Fixed height for the card */
+    align-items: center; /* Center content horizontally */
+    margin: 10px; /* Small gap between the cards */
+    overflow: hidden; /* Prevent content overflow */
+}
+/* FRUKTKORTENS TEXT (title & description) */
+.fruit-card-text-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the text container to grow */
+    overflow: hidden; /* Prevent text from overflowing */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    white-space: nowrap; 
+}
+.fruit-card-text-container h2 {
+    padding-left: 5%;
+}
+.fruit-card-text-container p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.fruit-card img {
+    width: 200px;
+    height: auto; /* Ensure the image does not stretch */
+}
+
